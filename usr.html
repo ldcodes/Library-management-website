@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>usr</title>
+	<script type="text/javascript" src="js2.js"></script>
+	<link rel="stylesheet" href="css2.css"  type="text/css"/>
+	
+<link rel="stylesheet" type="text/css" href="style2.css" />
+	
+</head>
+	<body>
+		
+	<div>
+		<ul class="q1">
+			<li><a href="index.html"><h2 style="color:aliceblue">退出</h2></a></li>
+			<li><h2 style="color:aliceblue">欢迎123</h2></li>
+		
+		</ul>
+	</div >
+	<div style="overflow:hidden">
+	<!-left>
+
+	<div id="left" style="background-image:url(zuo.jpg);">
+	<div id="mySidenav" >
+  
+        <button onClick="ex('first1');" class="l"><span>个人信息</span></button>
+        <button onClick="ex('lendborrow');" class="l"><span>借书/还书</span></button>
+		<button onClick="ex('BOOK');" class="l"><span>预约图书</span></button>
+		<button onClick="ex('gass1');" class="l"><span>猜你喜欢</span></button>
+
+</div>
+	
+	</div>
+	
+	<!-right>
+	<div id="right" style="background-image:url(right.jpg);">
+		<div id="first1" class="first">
+			
+			<div id="information" >
+				<p><h2>information </h2></p>
+				
+			<table id="booktable" cellspacing="0" cellpadding="0">
+				<tr>
+				<td>项目</td>
+				<th class="xc">信息</th>
+				
+				
+			</tr>
+			<tr>
+				<th>name</th>
+				<td class="xc">123</td>
+				
+				
+			</tr>
+			<tr>
+				<th  >phone</th>
+				<td class="xc">1234567890</td>
+				
+			</tr>
+			<tr>
+				<th>email</th>
+				<td class="xc">1234567890@zz.com</td>
+				
+			</tr>			
+					
+																		
+		</table>	
+			<p id="ww"></p>
+			<button   class="l" style="display: inline ;width: 170px;height: 50px;" onClick="x();"><span id="xxx1">修改信息</span></button>
+				<button  class="l" style="display: inline ;width: 170px;height: 50px;"><span>修改密码</span></button>
+			</div>
+			
+			
+			<div id="record">
+			<a href="#about" onclick="change('see1','record1');">浏览记录</a>	
+				
+	       <a href="#about" onclick="change('lends','record1');">已借阅</a>
+				
+				<div id="record1">
+				<div id="see1" class="books first">
+					<ul style="list-style-type:none">
+				<li><img src="images/book311.jpg" alt="" width="50" height="70" ></li>
+		        <li><img src="images/book322.jpg" alt="" width="50" height="70" ></li>
+						</ul>
+				</div>
+				<div id="lends" style="display: none" class="books">
+					<ul style="list-style-type:none">
+				<li><img src="images/book41.jpg" alt="" width="50" height="70" ></li>
+		      <li> <img src="images/book522.jpg" alt="" width="50" height="70" ></li>
+						</ul>
+				</div>
+				</div>
+			</div>
+		
+		</div>
+		<div id="sceond">
+		
+			<div id="lendborrow" >
+			<a onclick="change('lend','lendborrow1');">借书</a>
+			<a onclick="change('borrow','lendborrow1');">还书</a>
+		  <div id="lendborrow1">
+			<div id="lend">
+				<div>
+					<h2>请输入要借阅的书名或作者名</h2>
+					
+				<input type="text" id="searchbook" placeholder="书名/作者">
+				<button onClick="search();" class="l" style="display: inline ;width: 140px;height: 50px;">search</button>
+				</div>
+				<div style="width: 80%" >
+					<p><h1 id="wanning"></h1></p>
+		<table id="booktable12" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<th>书名</th>
+				<th>作者</th>
+				<th>数量</th>
+				<th>用户评价</th>
+			</tr>
+			<tr>
+				<th  >1</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>			
+					
+																		
+		</table>	
+					
+				</div>
+			   <button id="cc" class="l" style="display:none;width: 170px;height: 50px;">立即借阅</button>
+			  <div id="gass" style="visibility: hidden">
+				 
+			  <p>抱歉，该书已经被借走了，您可以立即预约。这几本和您想借的书比较类似，您也可以先看看这些书</p>
+				<div id="see" class="books first">
+					<ul style="list-style-type:none">
+				<li><img src="images/book311.jpg" alt="" width="50" height="70" ></li>
+		        <li><img src="images/book322.jpg" alt="" width="50" height="70" ></li>
+						</ul>
+				</div>  
+			  </div>
+			</div>
+			
+			<div id="borrow" style="display: none">
+				
+				<div>
+				<!- need repair >
+				</div>
+				<div>
+		<div class="tag">您还会再看这本书吗</div>
+		<input type="radio" id="checkbox-1-1" name="radiobutton" class="regular-checkbox" /><label for="checkbox-1-1">会</label>
+		<input type="radio" id="checkbox-1-2" name="radiobutton" class="regular-checkbox" /><label for="checkbox-1-2">不会</label>
+		<input type="radio" id="checkbox-1-3" name="radiobutton" class="regular-checkbox" /><label for="checkbox-1-3">可能吧</label>
+		
+	</div>
+				<div>
+		<div class="tag">您怎么评价这本书</div>
+		<input type="radio" id="checkbox-2-1" name="radiobutton1" class="regular-checkbox" /><label for="checkbox-2-1">十分精彩</label>
+		<input type="radio" id="checkbox-2-2" name="radiobutton1" class="regular-checkbox" /><label for="checkbox-2-2">值得一读</label>
+		<input type="radio" id="checkbox-2-3" name="radiobutton1" class="regular-checkbox" /><label for="checkbox-2-3">平平淡淡</label>
+		<input type="radio" id="checkbox-2-4" name="radiobutton1" class="regular-checkbox" /><label for="checkbox-2-4">文不对题</label>
+		<input type="radio" id="checkbox-2-5" name="radiobutton1" class="regular-checkbox" /><label for="checkbox-2-5">内容太烂</label>			
+	</div>
+				<div id="comment"></div>
+				<p><h1>读完本书后，您有什么想分享的吗，关于本书，关于作者？</h1></p>
+				<textarea name="comment" rows="10" cols="10" style="display: block"></textarea>
+				<P>感谢您的耐心评价！</P>
+				<button class="l" style="display: inline ;width: 170px;height: 50px;">提交</button>
+			</div>
+			</div>
+		</div>
+		
+		<div id="BOOK">
+			   <div>
+				   <p>请输入您要预约的图书的书名</p>
+				<input type="text" id="searchbook1" placeholder="书名">
+				<button onClick="book();" class="l" style="display: inline ;width: 170px;height: 50px;">search</button>
+				</div>
+			<p id="bookwanning"></p>
+			<div style="width: 80%">
+				
+				<!-information about book>
+				
+				<table id="booktable1" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<th>书名</th>
+				<th>作者</th>
+				<th>是否被借完</th>
+				<th>最迟归还日期</th>
+				
+			</tr>
+			<tr>
+				<th>1</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+					<p id="wanning1" style="display: none"></p>
+		</table>	
+				<button id="cc1" class="l" style="display:none;width: 190px;height: 50px;">立即预约(使用默认手机号)</button>
+			</div>
+			<div></div>
+			<div id="tui" style="display: none">
+				<p>您是否对以下图书感兴趣</p>
+				<div id="see" class="books first">
+					<ul style="list-style-type:none">
+				<li><img src="images/book311.jpg" alt="" width="50" height="70" ></li>
+		        <li><img src="images/book322.jpg" alt="" width="50" height="70" ></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="gass1" style="width: 90%">
+			<div>
+				
+			<table id="booktable1233" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>您借过这些书</td>
+				<th>您可能会喜欢这些书</th>
+			</tr>
+			<tr>
+				<th><img src="images/newbook111.JPG" alt="" width="180" height="180" ></th>
+				<td><img src="images/book311.jpg" alt="" width="700" height="180" ></td>
+			</tr>
+			<tr>
+				<th><img src="images/newbook2222.JPG" alt="" width="180" height="180" ></th>
+				<td><img src="images/book42.JPG" alt="" width="700" height="180" ></td>
+				
+			</tr>
+				<tr>
+				<th><img src="images/newbook333.JPG" alt="" width="180" height="180" ></th>
+				<td><img src="images/book511.jpg" alt="" width="700" height="180" ></td>
+				
+			</tr>
+					
+		</table>	
+				
+		   </div>
+		</div>
+		
+	</div>
+</div>
+</div>
+</body>
+</html>

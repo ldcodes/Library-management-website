@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+*{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-family : 微软雅黑,宋体;
+}
+
+#information{
+    width: 60%;
+	margin-left: 200px;
+	
+	  
+}
+
+#information1{
+	 width: 60%;
+}
+#xiugaixinxi{
+   display: inline ;
+	width: 170px;
+	height: 50px;
+	
+	    margin-left: 50px;
+}
+
+.uu ul{
+	margin: 20px;
+	padding-left: 100px;
+	margin-left: 330px;
+	padding: 10px;
+	
+}
+ul li{
+
+list-style-type:none;
+
+}
+label{
+	display: inline-block;
+	text-align:justify;
+	
+	width: 120px;
+  font-size: 14px;
+  line-height: 30px;
+	text-align: right;
+}
+.q1 {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   position: fixed;
+    top: 0;
+    width: 100%;
+}
+.q1 li {
+    float: right;
+	width: 100px;
+}
+#left{
+	
+	padding-top: 30px;
+	display: block;
+	float: left;
+	
+	width: 20%;
+	margin-bottom:-3000px; padding-bottom:3000px;
+}
+
+#right{
+	display: block;
+	float: right;
+	background-size:cover;
+	width: 80%;
+	
+	margin-bottom:-3000px; padding-bottom:3000px; 
+	
+}
+
+
+#mySidenav{
+	
+
+}
+#mySidenav a {
+    
+	 position: fixed;
+    left: 0px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.l{
+	margin-top: 30px;
+	text-align-last:center;
+	width: 100%;
+	height: 100px;
+	border-radius: 12px;
+	background-color:chartreuse;
+	display: inline-block;
+	 transition: all 0.5s;
+    cursor: pointer;
+}
+
+.l span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.l span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+
+}
+
+.l:hover span {
+  padding-right: 25px;
+}
+
+.l:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.books{
+	padding-top: 10px;
+	padding-bottom:10px;
+	border: #000000;
+	display: none;
+	text-align-last: center;
+	
+}
+.books img{
+	width: 90%;
+	height: 200px;
+	text-align-last: center;
+	padding-right: 50px;
+	padding-left: 30px;	
+}
+
+.first{
+	display: block;
+}
+
+#right div{
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-left: 10px;
+	
+}
+
+
+
+#sceond{
+	display: none;
+}
+
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+h2{
+	font-size:120%;
+}
+#container{
+	margin:0 auto;
+	width:680px;
+	background:#fff;
+	padding-bottom:20px;
+}
+#content{margin:0 20px;}
+p.sig{	
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+form{
+	margin:1em 0;
+	padding:.2em 20px;
+	background:#eee;
+}
+table, td{
+	font:100% Arial, Helvetica, sans-serif; 
+}
+table{width:100%;border-collapse:collapse;margin:1em 0;}
+th, td{text-align:left;padding:.5em;border:1px solid #fff;}
+th{background:#328aa4 url(tr_back.gif) repeat-x;color:#fff;}
+td{background:#e5f1f4;}
+
+/* tablecloth styles */
+
+tr.even td{background:#e5f1f4;}
+tr.odd td{background:#f8fbfc;}
+
+th.over, tr.even th.over, tr.odd th.over{background:#4a98af;}
+th.down, tr.even th.down, tr.odd th.down{background:#bce774;}
+th.selected, tr.even th.selected, tr.odd th.selected{}
+
+td.over, tr.even td.over, tr.odd td.over{background:#ecfbd4;}
+td.down, tr.even td.down, tr.odd td.down{background:#bce774;color:#fff;}
+td.selected, tr.even td.selected, tr.odd td.selected{background:#bce774;color:#555;}
+
+/* use this if you want to apply different styleing to empty table cells*/
+td.empty, tr.odd td.empty, tr.even td.empty{background:#fff;}
+
+
+
+
+textarea{
+	height: 200px;
+	width: 70%;
+	 resize: none;
+}
+
+button {
+    background-color:hsla(93,98%,47%,0.50);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   width: 100px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.tu{
+	
+	width: 600px;
+	height: 500px;
+}
+
+#op{
+	width: 100px;
+	margin-left: 350px;
+	height: inherit;
+}
+
+
+#cc{
+	
+}

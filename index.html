@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<title>图书管理系统</title>
+	
+	<script type="text/javascript" src="js1.js"></script>
+	<link rel="stylesheet" href="css1.css"  type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+
+
+
+<body>
+
+<ul class="q1">
+  
+  
+  <li><button id="log1" onclick="log1();" >登录</button></li>
+  <li><button id="log2" onclick="loggov();" >管理员</button></li>
+<!-yonghui>
+   
+	<li><button class="log11" style="display:none" onclick="exit();">退出</button></li>
+	<li><button class="log11" style="display:none" onclick="usr();">usr1</button></li>
+     <li><a class="log11"  style="display:none ;color:white;" ></a></li>
+<!-gov>
+	<li><button class="log22" style="display:none" onclick="exit();">退出</button></li>
+	<li><button class="log22" style="display:none" onclick="gov();">gov</button></li>
+     <li><a class="log22"  style="display:none ;color:white;" ></a></li>
+ 
+  
+</ul>
+	
+
+	
+	
+	<div id="w"  >
+	<center>
+<section id="rt-showcase-surround">
+    <div id="rt-showcase" class="slider-container rt-overlay-dark">
+        <div class="rt-container slider-container">
+            <div class="rt-grid-12 rt-alpha rt-omega">
+                
+                
+                
+
+                <div class="csslider1 autoplay">
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio" class="cs_anchor" checked>
+                    <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio" class="cs_anchor" >
+                    <ul>
+                        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                            <img src="images/11.jpg" alt="hot books" style="width: 100%;" />
+                        </div>
+                        <li class="num0 img">
+                            <a href="#new"><img src="images/11.jpg" alt="hot books" title="hot books" /></a>
+                        </li>
+                        <li class="num1 img">
+                            <a href="#hot"><img src="images/222.jpg" alt="new books" title="new books" /></a>
+                        </li>
+                        <li class="num2 img">
+                            <img src="images/33.jpg" alt="news" title="news" />
+                        </li>
+                    
+                    </ul>
+                    <div class="cs_description">
+                        <label class="num0">
+                            <span class="cs_title"><span class="cs_wrapper">hot books</span></span>
+                            
+                        </label>
+                        <label class="num1">
+                            <span class="cs_title"><span class="cs_wrapper">new books</span></span>
+                            
+                        </label>
+                        <label class="num2">
+                            <span class="cs_title"><span class="cs_wrapper">news</span></span>
+                            
+                        </label>
+                    </div>
+                    
+                    <div class="cs_arrowprev">
+                        <label class="num0" for="cs_slide1_0"></label>
+                        <label class="num1" for="cs_slide1_1"></label>
+                        <label class="num2" for="cs_slide1_2"></label>
+                    </div>
+                    <div class="cs_arrownext">
+                        <label class="num0" for="cs_slide1_0"></label>
+                        <label class="num1" for="cs_slide1_1"></label>
+                        <label class="num2" for="cs_slide1_2"></label>
+                    </div>
+                    
+                    <div class="cs_bullets">
+                        <label class="num0" for="cs_slide1_0">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="images/small/11.jpg" alt="hot books" title="hot books" /></span>
+                        </label>
+                        <label class="num1" for="cs_slide1_1">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="images/small/22.jpg" alt="new books" title="new books" /></span>
+                        </label>
+                        <label class="num2" for="cs_slide1_2">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="images/small/33.jpg" alt="new" title="new" /></span>
+                        </label>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</section>        <!-- /slider -->
+</center>
+	</div>
+	
+
+	
+	<div id="mySidenav" >
+  
+
+  <a href="#" id="top">top</a>
+ <a href="#new" id="newbook">new</a>
+ <a href="#hot" id="hotbook">hot</a>
+</div>
+	
+	
+	
+	
+	
+	<!-new book>
+	
+			<ul id="new" class="p" style="margin-top:80px">
+			<li>new book</li>
+				<li><a href="#about" onclick="change('n','mmm');">it</a></li>
+				<li><a href="#about" onclick="change('n','lll');">histoy</a></li>
+				
+			</ul>
+			
+		
+		
+	
+	<div id="n" >
+		
+	<div  class="books first"  id="mmm">
+		<img src="images/book1.png" alt="" width="50" height="70" >
+		<img src="images/book2.png" alt="" width="50" height="70" >
+	</div>
+		
+	<div  class="books" id="lll">
+		<img src="images/book511.jpg" alt="" width="50" height="70" >
+		<img src="images/book522.jpg" alt="" width="50" height="70" >
+	</div>
+	
+
+		
+	<br>
+	</div>
+	
+	
+	
+	<!-hot book>
+	
+
+	
+		
+			<ul id="hot" class="p">
+			<li>hot book</li>
+				<li><a href="#about" onclick="change('n1','mm');">历史</a></li>
+				<li><a href="#about" onclick="change('n1','ll');">文学</a></li>
+			</ul>
+			
+		
+	
+	<div id="n1" >
+		
+	<div  class="books first" id="mm">
+		<img src="images/book311.jpg" alt="" width="50" height="70" >
+		<img src="images/book322.jpg" alt="" width="50" height="70" >
+	</div>
+		
+	<div  class="books" id="ll">
+		<img src="images/book41.jpg" alt="" width="50" height="70" >
+		<img src="images/book42.jpg" alt="" width="50" height="70" >
+	</div>
+		
+	</div>
+	<p> </p>
+	<p> </p>
+	<p> </p>
+	<div class="button" style="text-align-last: center; border-top: 5px groove #000000;">版权所有 翻版必究 All Rights Reserved</div>
+
+	
+	<!-login>
+	
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+		
+      <label><b>用户名</b></label>
+      <input type="text" placeholder="Enter Username"  name="uname" required>
+      
+      <label><b>密       码</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+			<p id="w1"></p>
+      <button class="juzhong" type="button" onclick="log(uname,psw,0);">登陆</button>
+			
+		<div>
+			<p style="text-align-last: center;">第三方帐号登录</p>
+           <a onClick="qq();"><image src="qqlog.jpg"  width="40" height="50"/></a>
+			<a style="margin-left:20px;" onClick="wx();"><image src="wxlog.jpg"  width="40" height="50"/></a>
+		</div>
+      
+		 
+    </div>
+	   <div class="container">
+      <label ><b>用户名</b></label>
+      <input type="text" placeholder="Enter Username"  name="uname1" required>
+
+      <label><b>密码</b></label>
+      <input type="password" placeholder="Enter Password" name="psw1" required>
+        <p id="w2"></p>
+      <button class="juzhong" type="button" onclick="log(uname1,psw1,1);">登陆</button>
+		
+		 
+    </div>
+	  
+	  
+      <div id="container1" style="display: none">
+		  <image src="images/qqlogin.jpg"  width="280" height="300"/>
+	   </div>
+	  <div id="container2" style="display: none">
+		  <image src="images/wxlogin.jpg"  width="280" height="300"/>
+	   </div>
+    
+  </form>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>gov</title>
+	
+
+	<script type="text/javascript" src="js3.js"></script>
+	<link rel="stylesheet" href="css3.css"  type="text/css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style2.css" />
+	</head>
+
+<body>
+	
+	
+	
+	
+	
+	
+	
+		
+		
+	<div >
+		<ul class="q1">
+			<li><a href="index.html"><h2 style="color:aliceblue">退出</h2></a></li>
+			<li><h2 style="color:aliceblue">欢迎123</h2></li>
+		
+		</ul>
+	</div >
+	
+	<!-left>
+<div style="overflow:hidden">
+	<div id="left" style="background-image:url(zuo.jpg);">
+	<div id="mySidenav" >
+  
+        <button onClick="ex('first1');" class="l"><span>注册/注销</span></button>
+        <button onClick="ex('lendborrow');" class="l"><span>图书管理</span></button>
+		<button onClick="ex('seek');" class="l"><span>查询图书</span></button>
+		<button onClick="ex('BOOK');" class="l"><span>图书借阅情况</span></button>
+		
+</div>
+	
+	</div>
+	
+	<!-right>
+	<div id="right" style="background-image:url(right.jpg);">
+		<div id="first1" class="first">
+			<ul class="nav nav-tabs" style="display: inline">
+			    <li class="active" style="display: inline" onClick="change('information');">修改信息 </li>
+				<li style="display: inline" onClick="change('zhuce');" > 注册 </li>
+				<li style="display: inline"  onClick="change('zhuxiao');"> 注销 </li>
+			</ul>
+			<div id="information" class="uu">
+		<table id="information1" >
+			<tr>
+				<td style="width: 30%">项目</td>
+				<th style="width: 70%">信息</th>
+				
+			</tr>
+			<tr>
+				<th >用户名</th>
+				<td>123</td>
+				
+			</tr>
+			<tr>
+				<th>手机</th>
+				<td>123456789011</td>
+				
+			</tr>	
+				
+						
+		</table>
+			<button id="xiugaixinxi" class="l" onClick="table('information');"><span id="hhh">修改信息</span></button>
+	
+			</div>
+		<div id="zhuce" class="uu" style="display: none">
+			<ul>
+		   <li><label>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名</label>
+			<input type="text" id="1"  /></li>
+			<li ><label>手&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机</label>
+			<input type="text" id="2"/></li>
+			
+			<li><label>密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码</label>
+			<input type="password" id="4"/></li>
+			<li><label>重复密码</label>
+			<input type="password" id="5"/></li>
+				
+				<button class="l" style="width: 200px;height: 50px;" onClick="a();">注册</button>
+				<p id="ti"></p>
+			</ul>
+			
+			
+		</div>
+		<div id="zhuxiao" class="uu" style="display: none">
+		<ul>
+		   <li><label>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名</label>
+			<input type="text" id="6"  /></li>
+			<li><label>密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码</label>
+			<input type="password" id="7"/></li>
+			<li><label>重复密码</label>
+			<input type="password" id="8"/></li>
+				
+				<button class="l" style="width: 200px;height: 50px;" onClick="b();">注销</button>
+			<p id="ti1"></p>
+			</ul>
+			
+			
+			
+		</div>
+		
+		</div>
+		
+		<div id="sceond">
+		
+			<div id="lendborrow" >
+				<ul>
+				<li>图书概况</li>
+				
+				</ul>
+		<div id="display" style="width: 80%;" >
+					
+		<table id="booktable" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<th>书名</th>
+				<th>作者</th>
+				<th>数量</th>
+				<th>借出数量</th>
+				<th>删除</th>
+			</tr>
+			<tr id="hang2">
+				<th>1</th>
+				<td>数学书</td>
+				<td>张三</td>
+				<td>10</td>
+				<td>2</td>
+				<td><a onClick="del(1);">删除</a></td>
+			</tr>
+			<tr id="hang3">
+				<th>2</th>
+				<td>c语言</td>
+				<td>李四</td>
+				<td>11</td>
+				<td>5</td>
+				<td><a onClick="del(2);">删除</a></td>
+			</tr>	
+			<tr>
+				<th>3</th>
+				<td>java入门</td>
+				<td>王五</td>
+				<td>20</td>
+				<td>7</td>
+				<td><a onClick="del(3);">删除</a></td>
+			</tr>	
+			<tr>
+				<th>4</th>
+				<td>前端设计</td>
+				<td>王起</td>
+				<td>20</td>
+				<td>16</td>
+				<td><a onClick="del(4);">删除</a></td>
+			</tr>	
+			<tr>
+				<th>5</th>
+				<td>精通css</td>
+				<td>李九</td>
+				<td>18</td>
+				<td>10</td>
+				<td><a onClick="del(6);">删除</a></td>
+			</tr>				
+				
+																		
+		</table>	
+			<p><h1 id="wanning"></h1></p>
+				<button id="op" class="l" onClick="increase();">增加书目</button>
+				
+				</div>
+			  
+			
+				
+				
+				
+
+		</div>
+		
+		
+		<div id="seek" >
+			
+				
+				<div>
+					<h2>请输入要借阅的书名或作者名</h2>
+					
+				<input type="text" id="searchbook1" placeholder="书名/作者">
+				<button onClick="search();" class="l" style="display: inline ;width: 140px;height: 50px;">search</button>
+				</div>
+				<div style="width: 80%" >
+					<p><h1 id="wanning1"></h1></p>
+		<table id="booktable1" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<th>书名</th>
+				<th>作者</th>
+				<th>数量</th>
+				<th>用户评价</th>
+			</tr>
+			<tr>
+				<th  >1</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>			
+					
+																		
+		</table>	
+					
+				</div>
+			   
+			 
+			</div>
+		
+		<div id="BOOK">
+			
+			
+		<p>图书借阅情况</p>
+			
+			
+			<div id="cc" class="tu">
+	   <canvas id="myChart" ></canvas>
+			</div>
+			<script type="text/javascript">
+
+				
+				var data = {
+    labels: [
+        "IT类",
+        "历史类",
+        "小说"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+				var defaults = {  
+          pointDotRadius : 8,  
+					title: {
+            display: true,
+            text: '借阅量前三的图书类别',
+				 fontColor: 'black'
+        }
+				}
+    // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myBarChart = new Chart(ctx, {
+                                            type: 'pie',
+                                            data: data,
+                                             options:defaults
+                                    });
+			</script>
+			
+			
+			
+			
+			<div id="cc1" class="tu">
+	   <canvas id="myChart1" ></canvas>
+			</div>
+			
+			
+				<script type="text/javascript">
+			var data = {
+	labels : ["January","February","March","April","May","June","July"],
+	datasets : [
+		{
+			 label: "图书借阅量",
+			backgroundColor: "hsla(93,98%,47%,0.50)",
+			fillColor : "rgba(220,220,220,0.5)",
+			strokeColor : "rgba(220,220,220,1)",
+			pointColor : "rgba(220,220,220,1)",
+			pointStrokeColor : "#FFCE56",
+			data : [65,59,90,81,56,55,40]
+			
+		},
+		{
+			 label: "图书归还量",
+			backgroundColor: "#36A2EB",
+			fillColor : "rgba(151,187,205,0.5)",
+			strokeColor : "rgba(151,187,205,1)",
+			pointColor : "rgba(151,187,205,1)",
+			pointStrokeColor : "#FFCE56",
+			data : [28,48,40,19,96,27,100]
+		}
+	]
+				
+}	
+			
+			var defaults = {
+				title: {
+            display: true,
+            text: '2017年上半年图书借还情况',
+			 fontColor: 'black'
+        }
+	      
+	
+}
+ var ctx = document.getElementById("myChart1").getContext("2d");
+        var myBarChart = new Chart(ctx, {
+                                            type: 'line',
+                                            data: data,
+                                             options:defaults
+                                    });
+			</script>
+			
+		</div>
+		
+	
+		
+	</div>
+</div>
+</div>
+</body>
+	
+	
+
+</html>
